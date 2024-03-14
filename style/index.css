@@ -1,6 +1,6 @@
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 :root {
-  --n_col: 8;
+  --n_col: 10;
 }
 
 /*************************************************
@@ -40,10 +40,10 @@ header{
 }
 
 /* MAIN */
-.campo{
+.field{
   background-color: #7FFFD4;
 }
-#campo_box{
+#field_box{
   border: 1px solid black;
   width: calc(100vmin - 170px);
   margin: 0 auto;
