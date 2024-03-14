@@ -1,0 +1,99 @@
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+:root {
+  --n_col: 8;
+}
+
+/*************************************************
+      RESET
+   *************************************************/
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************************************************
+      UTILITIES
+   ************************************************/
+.d-contents {
+  display: contents;
+}
+
+/* COMPONENTS */
+/* _______________________________________________ */
+/* btn 1 */
+
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+  height: 100px;
+}
+
+/* MAIN */
+.campo{
+  background-color: #7FFFD4;
+}
+#campo_box{
+  border: 1px solid black;
+  width: calc(100vmin - 170px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-square {
+  width: calc(100% / var(--n_col));
+  max-width: calc(100% / var(--n_col));
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.btn-square:hover {
+  color: #bbbbbb;
+  border: 1px solid #bbbbbb;
+}
+
+/* FOOTER */
+footer{
+  height: 70px;
+}
+
+/*************************************************
+    MEDIA RESPONSIVE
+ *************************************************/
+/* breakpoints Medium*/
+@media (min-width: 768px) {
+}
+/* breakpoints Large*/
+@media (min-width: 992px) {
+}
+
+/*************************************************
+    DEBUG
+ *************************************************/
+.debug :is(header, main, footer) {
+  border: 2px solid rgb(0, 250, 0);
+}
+
+.debug .container {
+  border: 1px dashed rgba(250, 0, 0, 0.3);
+}
+
+.debug .row {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.debug [class^="col"] {
+  background-color: #daa52062;
+}
